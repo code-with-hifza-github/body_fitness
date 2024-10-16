@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gym</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.09);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .trainers {
+            margin-bottom: 20px;
+        }
+
+        .trainer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .trainer img {
+            width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .trainer img:hover {
+            transform: rotate(180deg);
+            /* transform: scale(1.12); */
+            /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); */
+        }
+
+        .trainer-info h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .trainer-info p {
+            margin: 0;
+            color: #777;
+        }
+
+        .history {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .reviews {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .row .trainer {
+            flex: 0 0 30%;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-wrap: wrap;
+            }
+
+            .row .trainer {
+                flex: 0 0 100%;
+                margin: 0 0 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h2 style="text-align:center ;">OUR GYM</h2>
+        <div class="gallery">
+            <img src="img1.jpg" alt="Image 1">
+            <img src="img2.jpg" alt="Image 2">
+            <img src="img3.jpg" alt="Image 3">
+            <img src="img4.jpg" alt="Image 4">
+            <img src="img5.jpg" alt="Image 5">
+            <img src="img6.jpg" alt="Image 6">
+        </div>
+
+
+        <div class="trainers">
+            <h2 style="text-align: center;">OUR TEAM</h2>
+
+            <div class="row">
+                <div class="trainer">
+                    <img src="pf1.png" alt="Trainer 1">
+                    <div class="trainer-info">
+                        <h3>John Doe</h3>
+                        <p>Certified Personal Trainer</p>
+                    </div>
+                </div>
+                <div class="trainer">
+                    <img src="pf2.jpg" alt="Trainer 2">
+                    <div class="trainer-info">
+                        <h3>Jane Smith</h3>
+                        <p>Yoga Instructor</p>
+                    </div>
+                </div>
+                <div class="trainer">
+                    <img src="pf3.jpg" alt="Trainer 3">
+                    <div class="trainer-info">
+                        <h3>Mike Johnson</h3>
+                        <p>CrossFit Coach</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="trainer">
+                    <img src="pf1.png" alt="Trainer 1">
+                    <div class="trainer-info">
+                        <h3>John Doe</h3>
+                        <p>Certified Personal Trainer</p>
+                    </div>
+                </div>
+                <div class="trainer">
+                    <img src="pf2.jpg" alt="Trainer 2">
+                    <div class="trainer-info">
+                        <h3>Jane Smith</h3>
+                        <p>Yoga Instructor</p>
+                    </div>
+                </div>
+                <div class="trainer">
+                    <img src="pf3.jpg" alt="Trainer 3">
+                    <div class="trainer-info">
+                        <h3>Mike Johnson</h3>
+                        <p>CrossFit Coach</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="trainer">
+                    <img src="pf1.png" alt="Trainer 1">
+                    <div class="trainer-info">
+                        <h3>John Doe</h3>
+                        <p>Certified Personal Trainer</p>
+                    </div>
+                </div>
+                <div class="trainer">
+                    <img src="pf2.jpg" alt="Trainer 2">
+                    <div class="trainer-info">
+                        <h3>Jane Smith</h3>
+                        <p>Yoga Instructor</p>
+                    </div>
+                </div>
+                <div class="trainer">
+                    <img src="pf3.jpg" alt="Trainer 3">
+                    <div class="trainer-info">
+                        <h3>Mike Johnson</h3>
+                        <p>CrossFit Coach</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history">
+                <h2>OUR HISTORY</h2>
+                <p>Welcome to Yankee Dumbbell Yard, where fitness meets history. Our journey through time begins with the
+                    ancient Greeks, who pioneered the concept of physical fitness in gymnasiums, blending exercise with
+                    intellectual pursuits. Over centuries, the Renaissance and Enlightenment periods revitalized interest in
+                    physical culture, while the Industrial Revolution spurred the creation of commercial gyms. Fast forward
+                    to today, and [Your Gym Name] continues this legacy, offering state-of-the-art facilities and expert
+                    guidance to help you achieve your fitness goals. Join us as we combine tradition with innovation,
+                    providing a space where strength, health, and community thrive.</p>
+            </div>
+
+            <div class="reviews">
+                <h2>MEMBER REVIEWS</h2>
+                <p>"I've been a member of Yankee Dumbbell Yard for over a year now, and I can confidently say it's been a
+                    game-changer for my fitness journey. The variety of equipment and classes cater to all levels, whether
+                    you're a beginner or a seasoned athlete. What sets this gym apart is the supportive atmosphere created
+                    by the staff and fellow members. The trainers are knowledgeable and motivating, always pushing me to
+                    exceed my limits in a safe and effective way. The facilities are clean, well-maintained, and offer
+                    everything I need to achieve my fitness goals. I highly recommend Yankee Dumbbell Yard to anyone looking to
+                    make positive changes in their health and fitness."</p>
+                <p>John Smith</p>
+                <p>"Yankee Dumbbell Yard has become my second home. From the moment I walked in, I was impressed by the welcoming
+                    environment and the professionalism of the staff. The gym is equipped with top-notch machines and
+                    amenities that make every workout enjoyable. What I appreciate most is the variety of classes offered
+                    throughout the week, which have helped me stay motivated and engaged in my fitness routine. Whether it's
+                    yoga, spin, or strength training, there's always something to challenge myself with. If you're looking
+                    for a gym that prioritizes both fitness and community, look no further than Yankee Dumbbell Yards."</p>
+                <p>John Smith</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        Copyright &copy; 2024 | Yankee Dumbbell Yard - All Rights Reserved
+    </footer>
+
+</body>
+
+</html>
